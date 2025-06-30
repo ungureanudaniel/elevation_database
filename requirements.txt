@@ -1,0 +1,7 @@
+Django
+psycopg2-binary
+gunicorn
+djangorestframework
+django-environ
+google-cloud-storage
+django-environ
