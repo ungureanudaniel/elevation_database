@@ -34,6 +34,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.gis',
     'elevation',
+    'storages',
 ]
 
 MIDDLEWARE = [
@@ -69,16 +70,7 @@ WSGI_APPLICATION = 'elevation_project.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.contrib.gis.db.backends.postgis',
-#         'NAME': env('POSTGRES_DB', 'elevationdb'),
-#         'USER': env('POSTGRES_USER', 'daniel'),
-#         'PASSWORD': env('POSTGRES_PASSWORD', 'Ungdan20'),
-#         'HOST': env('POSTGRES_HOST', 'db'),
-#         'PORT': env('POSTGRES_PORT', '5432'),
-#     }
-# }
+
 DATABASES = {
     'default': env.db(),  # Reads DATABASE_URL from .env file
 }

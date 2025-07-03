@@ -3,5 +3,5 @@ psycopg2-binary
 gunicorn
 djangorestframework
 django-environ
+django-storages
 google-cloud-storage
-django-environ
